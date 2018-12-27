@@ -54,7 +54,7 @@
              <configuration>
                <artifactItems>
                  <artifactItem>
-                   <groupId>org.apache.parquet</groupId>
+                   <groupId>org.lasersonlab.apache.parquet</groupId>
                    <artifactId>parquet-format</artifactId>
                    <version>${parquet.format.version}</version>
                    <type>jar</type>
@@ -74,6 +74,7 @@
         <configuration>
           <thriftSourceRoot>${parquet.thrift.path}</thriftSourceRoot>
           <thriftExecutable>${format.thrift.executable}</thriftExecutable>
+          <generator>java</generator>
         </configuration>
         <executions>
           <execution>
