@@ -92,7 +92,7 @@
     <dependency>
       <groupId>com.twitter</groupId>
       <artifactId>scrooge-core_${scala.binary.version}</artifactId>
-      <version>3.17.0</version>
+      <version>18.12.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.parquet</groupId>
@@ -140,9 +140,10 @@
         <plugin>
             <groupId>org.apache.thrift.tools</groupId>
             <artifactId>maven-thrift-plugin</artifactId>
-            <version>0.1.10</version>
+            <version>0.1.11</version>
             <configuration>
-                <thriftExecutable>${thrift.executable}</thriftExecutable>
+              <thriftExecutable>${thrift.executable}</thriftExecutable>
+              <generator>java</generator>
             </configuration>
             <executions>
                 <execution>
@@ -197,7 +198,7 @@
         <plugin>
             <groupId>com.twitter</groupId>
             <artifactId>scrooge-maven-plugin</artifactId>
-            <version>3.17.0</version>
+            <version>18.12.0</version>
             <configuration>
                 <outputDirectory>${project.build.directory}/generated-test-sources/scrooge</outputDirectory>
                 <thriftNamespaceMappings>

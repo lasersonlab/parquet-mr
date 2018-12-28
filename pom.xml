@@ -57,15 +57,6 @@
     </developer>
   </developers>
 
-  <!-- this is needed for maven-thrift-plugin, would like to remove this.
-   see: https://issues.apache.org/jira/browse/THRIFT-1536  -->
-  <pluginRepositories>
-    <pluginRepository>
-      <id>Twitter public Maven repo</id>
-      <url>http://maven.twttr.com</url>
-    </pluginRepository>
-  </pluginRepositories>
-
   <properties>
     <targetJavaVersion>1.6</targetJavaVersion>
     <maven.compiler.source>1.6</maven.compiler.source>
@@ -89,7 +80,7 @@
     <scala.maven.test.skip>false</scala.maven.test.skip>
     <pig.version>0.13.0</pig.version>
     <pig.classifier>h2</pig.classifier>
-    <thrift.version>0.7.0</thrift.version>
+    <thrift.version>0.9.0</thrift.version>
     <fastutil.version>6.5.7</fastutil.version>
     <semver.api.version>0.9.33</semver.api.version>
     <slf4j.version>1.7.5</slf4j.version>
@@ -414,8 +405,8 @@
             <exclude>.travis.yml</exclude>
             <exclude>licenses/**</exclude>
             <exclude>protobuf_install/**</exclude>
-            <exclude>thrift-0.7.0/**</exclude>
-            <exclude>thrift-0.7.0.tar.gz</exclude>
+            <exclude>thrift-0.9.0/**</exclude>
+            <exclude>thrift-0.9.0.tar.gz</exclude>
             <exclude>**/dependency-reduced-pom.xml</exclude>
           </excludes>
         </configuration>
