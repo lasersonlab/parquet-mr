@@ -149,22 +149,22 @@ The current release is version `1.10.0`
 ```xml
   <dependencies>
     <dependency>
-      <groupId>org.apache.parquet</groupId>
+      <groupId>org.lasersonlab.apache.parquet</groupId>
       <artifactId>parquet-common</artifactId>
       <version>1.10.0</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.parquet</groupId>
+      <groupId>org.lasersonlab.apache.parquet</groupId>
       <artifactId>parquet-encoding</artifactId>
       <version>1.10.0</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.parquet</groupId>
+      <groupId>org.lasersonlab.apache.parquet</groupId>
       <artifactId>parquet-column</artifactId>
       <version>1.10.0</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.parquet</groupId>
+      <groupId>org.lasersonlab.apache.parquet</groupId>
       <artifactId>parquet-hadoop</artifactId>
       <version>1.10.0</version>
     </dependency>
